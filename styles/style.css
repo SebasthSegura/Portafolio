@@ -74,6 +74,41 @@ body{
     color: var(--color-terciario);
 }
 
+.presentacion__contend_text_C h3.presentacion__contend_text_h3 {
+    font-family: var(--fuente-krona); 
+    font-size: 1.3rem;
+    color: var(--color-terciario);
+    margin-top: 15px; 
+    margin-bottom: 10px; 
+  }
+  
+  .presentacion__contend_text_C p.presentacion__contend_text_2 {
+    font-size: 1rem; 
+    font-family: var(--fuente-monserat);
+    line-height: 1.5;
+    color: var(--corlor-secundario);
+    margin-bottom: 10px;
+    padding-left: 15px; 
+  }
+  
+  .presentacion__contend_text_C li.presentacion__contend_text_li {
+    font-size: 1rem;
+    font-family: var(--fuente-monserat);
+    line-height: 1.5;
+    color: var(--corlor-secundario);
+    margin-bottom: 5px;
+    padding-left: 15px; 
+  }
+  
+  .presentacion__contend_text_C p.presentacion__contend_text_p2 {
+    font-size: 1rem;
+    font-family: var(--fuente-monserat);
+    line-height: 1.5;
+    color: var(--corlor-secundario);
+    margin-bottom: 10px;
+    padding-left: 15px; 
+  }
+
 .presentacion__enlaces{
     display: flex;
     justify-content: space-between;
