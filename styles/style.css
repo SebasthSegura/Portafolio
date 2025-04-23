@@ -1,8 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-    --color-primario:#000000;
+:root {
+    --color-primario: #000000;
     --corlor-secundario: #f6f6f6;
     --color-terciario: #22D4FD;
     --color-hover: #272727;
@@ -13,33 +12,70 @@
 
 * {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
-body{
+body {
     background-color: var(--color-primario);
     color: var(--corlor-secundario);
     box-sizing: border-box;
 }
 
-.header{
-    padding: 2% 0% 0% 15%;
+/* Estilo para el encabezado principal */
+.header {
+    padding: 2% 5%; /* Espaciado interno del encabezado */
+    display: flex; /* Usamos flexbox para organizar los elementos */
+    justify-content: space-between; /* Distribuiye los elementos con espacio entre ellos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
 }
 
-.header__menu{
-    display: flex;
-    gap: 80px;
+/* Estilo para el menú dentro del encabezado */
+.header__menu {
+    display: flex; /* Usar flexbox para organizar los enlaces del menú */
+    gap: 20px; /* Espaciado entre los elementos del menú */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias líneas si es necesario */
 }
 
-.header__menu__link{
-    font-family: var(--fuente-monserat);
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--color-terciario);
-    text-decoration: none;
+/* Estilo para los enlaces del menú */
+.header__menu__link {
+    font-family: var(--fuente-monserat); /* Fuente personalizada */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    font-weight: 600; /* Grosor de la fuente */
+    color: var(--color-terciario); /* Color del texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    padding: 10px 15px; /* Espaciado interno del enlace */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para cambios de color */
 }
 
-.presentacion{
+/* Estilo para los enlaces del menú al pasar el cursor */
+.header__menu__link:hover {
+    background-color: var(--color-hover); /* Cambiar el fondo al pasar el cursor */
+    color: var(--corlor-secundario); /* Cambiar el color del texto al pasar el cursor */
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Cambiar la dirección de los elementos a columna */
+        align-items: flex-start; /* Alinear los elementos al inicio */
+        padding: 5%; /* Ajustar el espaciado interno */
+    }
+
+    .header__menu {
+        flex-direction: column; /* Cambiar la dirección de los elementos del menú a columna */
+        gap: 10px; /* Reducir el espaciado entre los elementos */
+        width: 100%; /* Hacer que el menú ocupe todo el ancho */
+    }
+
+    .header__menu__link {
+        width: 100%; /* Hacer que los enlaces ocupen todo el ancho */
+        text-align: center; /* Centrar el texto de los enlaces */
+    }
+}
+
+
+.presentacion {
     display: flex;
     align-items: center;
     padding: 7% 15%;
@@ -47,14 +83,14 @@ body{
     gap: 82px;
 }
 
-.presentacion_contenido{
+.presentacion_contenido {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.presentacion__contenido_titulo{
+.presentacion__contenido_titulo {
     font-size: 2.25rem;
     font-family: var(--fuente-krona);
 }
@@ -63,53 +99,52 @@ body{
     color: var(--color-terciario);
 }
 
-.presentacion__contend_text{
+.presentacion__contend_text {
     font-size: 1.5rem;
-    font-family: var(--fuente-monserat
-    );
+    font-family: var(--fuente-monserat);
 }
 
-.presentacion__contend_text a{
+.presentacion__contend_text a {
     text-decoration: none;
     color: var(--color-terciario);
 }
 
 .presentacion__contend_text_C h3.presentacion__contend_text_h3 {
-    font-family: var(--fuente-krona); 
+    font-family: var(--fuente-krona);
     font-size: 1.3rem;
     color: var(--color-terciario);
-    margin-top: 15px; 
-    margin-bottom: 10px; 
-  }
-  
-  .presentacion__contend_text_C p.presentacion__contend_text_2 {
-    font-size: 1rem; 
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.presentacion__contend_text_C p.presentacion__contend_text_2 {
+    font-size: 1rem;
     font-family: var(--fuente-monserat);
     line-height: 1.5;
     color: var(--corlor-secundario);
     margin-bottom: 10px;
-    padding-left: 15px; 
-  }
-  
-  .presentacion__contend_text_C li.presentacion__contend_text_li {
+    padding-left: 15px;
+}
+
+.presentacion__contend_text_C li.presentacion__contend_text_li {
     font-size: 1rem;
     font-family: var(--fuente-monserat);
     line-height: 1.5;
     color: var(--corlor-secundario);
     margin-bottom: 5px;
-    padding-left: 15px; 
-  }
-  
-  .presentacion__contend_text_C p.presentacion__contend_text_p2 {
+    padding-left: 15px;
+}
+
+.presentacion__contend_text_C p.presentacion__contend_text_p2 {
     font-size: 1rem;
     font-family: var(--fuente-monserat);
     line-height: 1.5;
     color: var(--corlor-secundario);
     margin-bottom: 10px;
-    padding-left: 15px; 
-  }
+    padding-left: 15px;
+}
 
-.presentacion__enlaces{
+.presentacion__enlaces {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -117,13 +152,13 @@ body{
     gap: 32px;
 }
 
-.presentacion__enlace_subtitulo{
+.presentacion__enlace_subtitulo {
     font-family: var(--fuente-krona);
     font-size: 1.5rem;
     font-weight: 400px;
 }
 
-.presentacion__enlace_intagram{
+.presentacion__enlace_intagram {
     width: 50%;
     text-align: center;
     padding: 21.5px 0;
@@ -139,7 +174,7 @@ body{
     gap: 10px;
 }
 
-.presentacion__enlace_linkedin{
+.presentacion__enlace_linkedin {
     width: 50%;
     text-align: center;
     padding: 21.5px 0;
@@ -155,7 +190,7 @@ body{
     gap: 10px;
 }
 
-.presentacion__enlace_github{
+.presentacion__enlace_github {
     width: 50%;
     text-align: center;
     padding: 21.5px 0;
@@ -171,55 +206,68 @@ body{
     gap: 10px;
 }
 
-.imagen__mia{
+.imagen__mia {
     width: 50%;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.presentacion__enlace_intagram:hover{
+.imagen__mia:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.presentacion__enlace_intagram:hover {
     background-color: var(--color-hover);
 }
 
-.presentacion__enlace_linkedin:hover{
+.presentacion__enlace_linkedin:hover {
     background-color: var(--color-hover);
 }
 
-.presentacion__enlace_github:hover{
+.presentacion__enlace_github:hover {
     background-color: var(--color-hover);
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: aliceblue;
-    padding: 30px;
-    font-weight: 400;
-}
-
-.presentacion_baja{
-    color: var(--color-primario);
+    justify-content: center;
+    background-color: var(--color-primario);
+    padding: 40px 20px;
     font-family: var(--fuente-monserat);
-    font-size: 19px;
+    font-size: 1rem;
+    color: var(--corlor-secundario);
+    border-top: 2px solid var(--color-terciario);
 }
 
-@media (max-width: 1200px){
-    
-    .header{
+.presentacion_baja {
+    font-size: 1rem;
+    font-family: var(--fuente-monserat);
+    color: var(--corlor-secundario);
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+
+    .header {
         padding: 10%;
     }
 
-    .header__menu{
+    .header__menu {
         justify-content: center;
     }
 
-    .presentacion{
+    .presentacion {
         flex-direction: column-reverse;
         padding: 5%;
     }
 
-    .presentacion_contenido{
+    .presentacion_contenido {
         width: auto;
     }
 }
-
-
