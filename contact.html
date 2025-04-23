@@ -1,0 +1,55 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactame</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/form_style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu__link" href="index.html">Home</a>
+            <a class="header__menu__link" href="about.html">Sobre mi</a>
+            <a class="header__menu__link" href="curriculum.html">Curriculum</a>
+            <a class="header__menu__link" href="proyect.html">Proyectos</a>
+            <a class="header__menu__link" href="contact.html">Contacto</a>
+        </nav>
+    </header>
+    <main class="presentacion">
+        <section class="presentacion_contenido">
+            <h1 class="presentacion__contenido_titulo">¡Contáctame!</h1>
+            <p class="presentacion__contend_text">Si tienes alguna pregunta, duda o simplemente quieres hablar sobre un proyecto, no dudes en contactarme. Estoy aquí para ayudarte.</p>
+            <form action="contac__to">
+                <label for="nombre" class="form__name">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form__name" required>
+
+                <label for="email" class="form__email"> Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="form__email" required>
+
+                <label for="mensaje" class="form__mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" class="form__textarea" required></textarea>
+
+                <button type="submit" class="form__button">Enviar</button>
+            </form>
+
+        </section>
+        <img class="imagen__mia" src="./assets/Self_portafolio.jpg" alt="Foto de Juan Segura">
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Desarrollado por <strong>Juan Segura</strong> | Todos los derechos reservados © 2025</p>
+        <div class="footer__social">
+            <a href="https://twitter.com/juansegura" target="_blank" rel="noopener noreferrer">
+                <img src="assets/twitter-novo.png" alt="Twitter de Juan Segura" class="footer__social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/juan-negrete25/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/linkedin.png" alt="LinkedIn de Juan Segura" class="footer__social-icon">
+            </a>
+        </div>
+        <div class="footer__social">
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/instagram.png" alt="logo Instagram" class="footer__social-icon">
+            </a>
+    </footer>
+</body>
+</html>
