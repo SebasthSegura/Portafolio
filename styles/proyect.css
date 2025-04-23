@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primario: #000000;
+    --corlor-secundario: #f6f6f6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-monserat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+/* Estilos para la sección de proyectos */
+.proyectos__lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.proyectos__item {
+    background-color: var(--color-secundario);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyectos__item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.proyectos__item_titulo {
+    font-family: var(--fuente-krona);
+    font-size: 1.8rem;
+    color: var(--corlor-secundario);
+    margin-bottom: 10px;
+}
+
+.proyectos__p_descripcion {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.2rem;
+    color: var(--corlor-secundario);
+    margin-bottom: 10px;
+}
+
+.proyectos__item_descripcion {
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    color: var(--corlor-secundario);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.evidencia_proyects {
+    text-align: center;
+}
+
+.evidencia_proyects img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.evidencia_proyects img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .proyectos__item {
+        padding: 15px;
+    }
+
+    .proyectos__item_titulo {
+        font-size: 1.5rem;
+    }
+
+    .proyectos__p_descripcion,
+    .proyectos__item_descripcion {
+        font-size: 0.9rem;
+    }
+}
