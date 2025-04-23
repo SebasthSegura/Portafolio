@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primario: #000000;
+    --corlor-secundario: #f6f6f6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-monserat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+
+/* Estilos para el formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--color-secundario);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    color: var(--color-terciario);
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    color: var(--color-primario);
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--color-terciario);
+    box-shadow: 0 0 5px rgba(34, 212, 253, 0.5);
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+    background-color: var(--color-terciario);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-hover);
+    transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
