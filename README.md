@@ -32,7 +32,7 @@ La estructura de archivos del portafolio es la siguiente:
 
 │   ├── linkedin.png
 
-│   ├── Self_portafolio.jpg}
+│   ├── Self_portafolio.jpg
 
 │   └── twitter-novo.png
 
