@@ -18,7 +18,7 @@ Este portafolio está construido utilizando las siguientes tecnologías web:
 
 -   **HTML:** Para la estructura y el contenido de las páginas.
 -   **CSS:** Para el diseño y la presentación visual del sitio.
--   **JavaScript:** Para mostrar progreso de lectura uso de funciones interactivas con ´.js´.
+-   **JavaScript:** Para mostrar animar o dar "vida", uso de funciones interactivas con `.js`.
 
 ## Estructura de Archivos
 
