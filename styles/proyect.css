@@ -11,14 +11,14 @@
 }
 
 /* Estilos para la sección de filtros de proyectos */
-.filtros-proyectos {
+.filtros_proyectos {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
 }
 
-.filtro-btn {
+.filtro_btn {
     padding: 10px 20px;
     font-family: var(--fuente-montserrat);
     font-size: 1rem;
@@ -33,18 +33,18 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.filtro-btn:hover {
+.filtro_btn:hover {
     background-color: var(--color-hover);
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.filtro-btn:active {
+.filtro_btn:active {
     transform: scale(0.95);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.filtro-btn.activo {
+.filtro_btn.activo {
     background-color: var(--color-hover);
     color: var(--corlor-secundario);
     font-weight: bold;
