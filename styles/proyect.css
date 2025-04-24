@@ -142,6 +142,48 @@
 
 /* Responsividad */
 @media (max-width: 768px) {
+
+    /* Ajustar la sección de filtros */
+    .filtros_proyectos {
+        flex-direction: column; /* Cambiar a una columna */
+        gap: 10px; /* Reducir el espacio entre botones */
+        margin: 10px 0;
+    }
+
+    .filtro_btn {
+        padding: 8px 15px; /* Reducir el tamaño del botón */
+        font-size: 0.9rem; /* Reducir el tamaño de la fuente */
+    }
+
+    /* Ajustar la lista de proyectos */
+    .proyectos__lista {
+        gap: 20px; /* Reducir el espacio entre los elementos */
+    }
+
+    .proyectos__item {
+        padding: 10px; /* Reducir el padding interno */
+    }
+
+    .proyectos__item_titulo {
+        font-size: 1.2rem; /* Reducir el tamaño del título */
+    }
+
+    .proyectos__p_descripcion,
+    .proyectos__item_descripcion {
+        font-size: 0.8rem; /* Reducir el tamaño del texto */
+    }
+
+    /* Ajustar las imágenes */
+    .evidencia_proyects img {
+        max-width: 100%; /* Asegurar que las imágenes no excedan el ancho del contenedor */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    /* Ajustar el botón "Ver Detalles" */
+    .show_detalles {
+        padding: 8px 15px; /* Reducir el tamaño del botón */
+        font-size: 0.9rem; /* Reducir el tamaño de la fuente */
+    }
     .proyectos__item {
         padding: 15px;
     }
