@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primario: #000000;
+    --corlor-secundario: #f6f6f6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-monserat: "Montserrat", sans-serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+
+/* Estilos para la ventana flotante */
+.ventana-flotante {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.ventana-flotante-contenido {
+    background-color: var(--color-secundario);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.cerrar-ventana {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primario);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cerrar-ventana:hover {
+    color: var(--color-terciario);
+}
+
+.ventana-flotante-contenido h4 {
+    font-family: var(--fuente-krona);
+    font-size: 1.8rem;
+    color: var(--corlor-secundario);
+    margin-bottom: 20px;
+}
+
+.ventana-flotante-contenido p {
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    color: var(--color-terciario);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.ventana-flotante-contenido a {
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    color: var(--color-terciario);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.ventana-flotante-contenido a:hover {
+    color: var(--color-hover);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .ventana-flotante-contenido {
+        padding: 20px;
+    }
+
+    .ventana-flotante-contenido h4 {
+        font-size: 1.5rem;
+    }
+
+    .ventana-flotante-contenido p {
+        font-size: 0.9rem;
+    }
+}

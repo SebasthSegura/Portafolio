@@ -71,6 +71,34 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* Estilos para el botón "Ver Detalles" */
+.show_detalles {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+    background-color: var(--color-terciario);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.show_detalles:hover {
+    background-color: var(--color-hover);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.show_detalles:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
     .proyectos__item {
