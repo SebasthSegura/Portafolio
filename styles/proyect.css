@@ -10,6 +10,47 @@
     --fuente-krona: "Krona One", sans-serif;
 }
 
+/* Estilos para la sección de filtros de proyectos */
+.filtros-proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.filtro-btn {
+    padding: 10px 20px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--corlor-secundario);
+    background-color: var(--color-terciario);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.filtro-btn:hover {
+    background-color: var(--color-hover);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.filtro-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.filtro-btn.activo {
+    background-color: var(--color-hover);
+    color: var(--corlor-secundario);
+    font-weight: bold;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 /* Estilos para la sección de proyectos */
 .proyectos__lista {
     list-style: none;
