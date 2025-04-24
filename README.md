@@ -36,6 +36,10 @@ La estructura de archivos del portafolio es la siguiente:
 
 │   └── twitter-novo.png
 
+├── Funtions/
+
+│   ├── progress_bar.js
+
 ├── styles/
 
 │   ├── form_style.css
