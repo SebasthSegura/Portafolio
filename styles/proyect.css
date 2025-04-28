@@ -11,14 +11,14 @@
 }
 
 /* Estilos para la sección de filtros de proyectos */
-.filtros_proyectos {
+.filtros-proyectos {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
 }
 
-.filtro_btn {
+.filtro-btn {
     padding: 10px 20px;
     font-family: var(--fuente-montserrat);
     font-size: 1rem;
@@ -33,18 +33,18 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.filtro_btn:hover {
+.filtro-btn:hover {
     background-color: var(--color-hover);
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.filtro_btn:active {
+.filtro-btn:active {
     transform: scale(0.95);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.filtro_btn.activo {
+.filtro-btn.activo {
     background-color: var(--color-hover);
     color: var(--corlor-secundario);
     font-weight: bold;
@@ -150,7 +150,7 @@
         margin: 10px 0;
     }
 
-    .filtro_btn {
+    .filtro-btn {
         padding: 8px 15px; /* Reducir el tamaño del botón */
         font-size: 0.9rem; /* Reducir el tamaño de la fuente */
     }
@@ -184,6 +184,7 @@
         padding: 8px 15px; /* Reducir el tamaño del botón */
         font-size: 0.9rem; /* Reducir el tamaño de la fuente */
     }
+    
     .proyectos__item {
         padding: 15px;
     }
