@@ -70,7 +70,7 @@ La estructura de archivos del portafolio es la siguiente:
 
 -   La carpeta `assets/` contiene las imágenes utilizadas en el portafolio, como logos de redes sociales y mi foto personal.
 -   La carpeta `styles/` contiene los archivos CSS para dar estilo a las diferentes páginas.
--   La carpeta `Funtions/` contiene los archivos JavaScrit para dar funcionalidad a las diferentes páginas.
+-   La carpeta `Funtions/` contiene los archivos JavaScript para dar funcionalidad a las diferentes páginas.
 -   Los archivos `.html` son las páginas individuales del portafolio.
 
 ## Cómo Navegar
