@@ -1,30 +1,30 @@
 function filterProyects() {
-    const botonesFiltro = document.querySelectorAll('.filtro-btn'); // Selector actualizado según el HTML
+    const botonesFiltro = document.querySelectorAll('.filtro-btn'); // Selector
     const proyectosLista = document.querySelector('.proyectos__lista');
     const proyectosItems = proyectosLista.querySelectorAll('.proyectos__item');
 
     botonesFiltro.forEach(boton => {
         boton.addEventListener('click', function() {
-            const categoria = this.getAttribute('data-categoria'); // Atributo actualizado según el HTML
+            const categoria = this.getAttribute('data-categoria'); // Atributo actualizado 
 
-            // Desactivar el botón activo previamente
+            // Desactivamos el botón activo previamente
             botonesFiltro.forEach(btn => btn.classList.remove('activo'));
-            // Activar el botón actual
+            // Activamos el botón actual
             this.classList.add('activo');
 
-            // Filtrar los proyectos según la categoría seleccionada
+            // Filtramos los proyectos según la categoría seleccionada
             proyectosItems.forEach(item => {
                 if (categoria === 'todos' || item.getAttribute('data-categoria') === categoria) {
-                    item.style.display = 'block'; // Mostrar el proyecto
+                    item.style.display = 'block'; // mostrara el proyecto
                 } else {
-                    item.style.display = 'none'; // Ocultar el proyecto
+                    item.style.display = 'none'; // Ocultara el proyecto
                 }
             });
         });
     });
 }
 
-// Inicializar las funciones al cargar el DOM
+// Inicializamos las funciones al cargar el DOM
 document.addEventListener('DOMContentLoaded', () => {
     filterProyects(); // Inicializamos el filtro
     Details_windows(); // Función para la ventana flotante
