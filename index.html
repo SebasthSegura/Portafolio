@@ -7,6 +7,7 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="icon" href="./assets/icon.png" type="image/png">
+    <link rel ="stylesheet" href="./styles/minigame_view.css">
 
 </head>
 <body>
@@ -45,7 +46,20 @@
                     GitHub</a>
             </div>
         </section>    
-        <img class="imagen__mia" src="assets/Self_portafolio.jpg" alt="Foto de Juan Segura">
+        <img class="imagen__mia" src="assets/Self_portafolio.jpg" alt="Foto de Juan Segura"><BR></BR>
+
+        <div id="ventanaFlotante" class="ventana-flotante">
+            <div class="cabecera">
+                <span id="tituloVentana">¡Mini Juego!</span>
+                <button id="cerrarVentana">×</button>
+            </div>
+            <div class="contenido">
+                <p>¡Haz clic en el botón para jugar!</p>
+                <button id="botonInteractuar">¡Clic Aquí!</button>
+                <p id="mensaje"></p>
+            </div>
+        </div>
+
     </main>
     <footer class="footer">
         <p class="footer__text">Desarrollado por <strong>Juan Segura</strong> | Todos los derechos reservados © 2025</p>
@@ -60,4 +74,5 @@
     </footer></a>
 </body>
 <script src="./funtions/progress_bar.js"></script>
+<script src="./funtions/minigame.js"></script>
 </html>
