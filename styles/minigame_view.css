@@ -81,7 +81,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100% - 30px); /* Ajustar altura por la cabecera */
+    height: calc(100% - 30px); /* Ajustar altura */
 }
 
 .ventana-flotante.expandir .contenido {
@@ -89,9 +89,11 @@
     display: block; /* Cambiar a block para el juego */
 }
 
+
 /* Estilo inicial del icono */
+/* Icono de joystick */
 .ventana-flotante::before {
-    content: "🕹️"; /* Icono de joystick */
+    content: "🕹️"; 
     font-size: 28px;
     position: absolute;
     top: 50%;
