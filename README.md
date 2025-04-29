@@ -6,7 +6,7 @@
 
 Este portafolio consta de las siguientes secciones:
 
--   **Inicio (index.html):** Una presentación personal destacando mis habilidades como desarrollador de software Back-end, especializado en estructuras de datos. Incluye enlaces a mis redes sociales.
+-   **Inicio (index.html):** Una presentación personal destacando mis habilidades como desarrollador de software Back-end, especializado en estructuras de datos. Incluye enlaces a mis redes sociales y un pequeño mini juego programado para distraerse.
 -   **Sobre mí (about.html):** Una página donde comparto más detalles sobre mi trayectoria, mis habilidades técnicas y mis objetivos profesionales como desarrollador Back-end junior.
 -   **Currículum (curriculum.html):** Un resumen detallado de mi experiencia profesional, habilidades técnicas y estudios realizados.
 -   **Proyectos (proyect.html):** Una sección dedicada a mostrar algunos de los proyectos en los que he trabajado, con descripciones y evidencias visuales.
