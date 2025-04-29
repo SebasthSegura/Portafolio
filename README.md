@@ -18,7 +18,7 @@ Este portafolio está construido utilizando las siguientes tecnologías web:
 
 -   **HTML:** Para la estructura y el contenido de las páginas.
 -   **CSS:** Para el diseño y la presentación visual del sitio.
--   **JavaScript:** Para mostrar animar o dar "vida", uso de funciones interactivas con `.js`.
+-   **JavaScript:** Para mostrar, animar o dar "vida", uso de funciones interactivas con `.js`.
 
 ## Estructura de Archivos
 
@@ -40,11 +40,21 @@ La estructura de archivos del portafolio es la siguiente:
 
 │   ├── progress_bar.js
 
+│   ├── show_details.js
+
+│   ├── minigame.js
+
+│   └── filter_proyect.js
+
 ├── styles/
 
 │   ├── form_style.css
 
 │   ├── proyect.css
+
+│   ├── minigame_view.css
+
+│   ├── window_dinamic.css
 
 │   └── style.css
 
@@ -60,6 +70,7 @@ La estructura de archivos del portafolio es la siguiente:
 
 -   La carpeta `assets/` contiene las imágenes utilizadas en el portafolio, como logos de redes sociales y mi foto personal.
 -   La carpeta `styles/` contiene los archivos CSS para dar estilo a las diferentes páginas.
+-   La carpeta `Funtions/` contiene los archivos JavaScrit para dar funcionalidad a las diferentes páginas.
 -   Los archivos `.html` son las páginas individuales del portafolio.
 
 ## Cómo Navegar
